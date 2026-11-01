@@ -1,6 +1,6 @@
 # 长尾客户个性化触达 MVP
 
-私有测验源码仓库。核心工作流 v2.0，演示包装层 v1.0。使用 ChatGPT 辅助形成方案、代码、文档和测试；辅助环境执行证据通过招聘方指定渠道另交。本仓库不包含客户原始资料、运行输出、模型或本机配置。代码内有根据题目整理的候选片段，仓库必须保持私有。
+测验源码仓库。核心工作流 v2.0，演示包装层 v1.0。使用 ChatGPT 辅助形成方案、代码、文档和测试；辅助环境执行证据通过招聘方指定渠道另交。本仓库不包含客户原始资料、运行输出、模型或本机配置。代码内有根据题目整理的候选片段。
 
 ## 做什么
 
@@ -10,7 +10,7 @@
 
 ## 怎么运行
 
-Python 3.11+。把本人收到的原始资料放本机 input/mock_customers.txt 和 input/knowledge_base.zip，保持知识库 ZIP 不解压。
+Python 3.11+。把收到的原始资料放本机 input/mock_customers.txt 和 input/knowledge_base.zip，保持知识库 ZIP 不解压。
 
 ```bash
 python3 setup_demo.py
@@ -19,7 +19,7 @@ python3 demo.py
 
 浏览器打开 http://127.0.0.1:8765。真实运行需要本机 llama-cli 与 GGUF 权重；setup_demo.py 只下载官方公开制品并核对模型哈希。网页先看②客户，再到③运行，真实、离线和已有记录明确分开。详细步骤及排错见 DEMO_QUICKSTART.md。
 
-仓库不包含历史记录，所以④历史样例、⑤失败记录及③已有记录会提示文件缺失。使用另交本地演示包可查看证据；本人放好原题输入并成功安装模型后，本仓库可以重新执行③真实模式。
+仓库不包含历史记录，所以④历史样例、⑤失败记录及③已有记录会提示文件缺失。使用另交本地演示包可查看证据；放好原题输入并成功安装模型后，本仓库可以重新执行③真实模式。
 
 ## 直接命令行运行
 
@@ -53,6 +53,4 @@ CUSTOMERS_PATH="$PWD/input/mock_customers.txt" KB_PATH="$PWD/input/knowledge_bas
 
 ## 数据与访问
 
-不上传 input、outputs、live_local_outputs、demo_runs、runtime、local_config.json、模型、题目附件、签名或密钥。.gitignore 已排除这些目录，但网页手动上传也要自己核对。请按招聘方认可方式授权访问私有仓库；仅有链接不代表他人已有权限。
-
-完整 AI 使用范围、资料流向、个人复现状态与待核验平台设置在另交技术说明披露；代码仓库不能替代该声明和本人承诺书。
+不上传 input、outputs、live_local_outputs、demo_runs、runtime、local_config.json、模型、题目附件、签名或密钥。.gitignore 已排除这些目录。
