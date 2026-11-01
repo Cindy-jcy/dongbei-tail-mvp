@@ -1,8 +1,3 @@
-"""Loopback-only teaching UI around the unchanged workflow v2.0.
-
-No hosted service, third-party frontend or automatic outbound model call.
-Historical evidence and newly executed inference are labeled separately.
-"""
 from __future__ import annotations
 
 import argparse
