@@ -1,0 +1,29 @@
+{
+  "schema": "candidate-python-workflow/1",
+  "not_dify_export": true,
+  "version": "v2.0",
+  "default_provider": "offline",
+  "date_mode": "simulation",
+  "steps": [
+    "load_and_validate",
+    "scope_long_tail",
+    "risk_and_source_gate",
+    "rank_approved_spans",
+    "build_prompt",
+    "select_ids",
+    "validate_schema_and_evidence",
+    "compose_and_audit",
+    "manual_review"
+  ],
+  "states": [
+    "SKIP_NON_TARGET",
+    "HOLD_NO_FRESH_SOURCE",
+    "HOLD_PROVIDER_ERROR",
+    "HOLD_VALIDATION_FAILED",
+    "REVIEW_REQUIRED"
+  ],
+  "live_api_tested": false,
+  "actual_send": false,
+  "local_model_tested": true,
+  "local_model": "Qwen2.5-0.5B-Instruct-Q4_K_M"
+}
