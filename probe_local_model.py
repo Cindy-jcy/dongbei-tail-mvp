@@ -7,7 +7,6 @@ import time
 from datetime import date
 import workflow as w
 
-
 def main():
     customers, _, _ = w.load_customers(os.environ["CUSTOMERS_PATH"])
     lookup = {c["customer_id"]: c for c in customers}
