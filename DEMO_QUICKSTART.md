@@ -31,7 +31,7 @@
 
 ## 代码与数据的交付分开
 
-私有 GitHub 仅上传代码、前端、测试、配置模板与运行说明。不要上传 input、outputs、live_local_outputs、demo_runs、local_config.json、runtime、原题与签名。代码内包含从题目整理的候选句，仓库必须保持私有，也应按招聘方确认的渠道授权访问。含客户示例和运行证据的本地演示包按招聘方指定渠道提交。
+GitHub 仅上传代码、前端、测试、配置模板与运行说明。不要上传 input、outputs、live_local_outputs、demo_runs、local_config.json、runtime、原题与签名。代码内包含从题目整理的候选句。
 
 ## 官方来源
 
@@ -41,5 +41,3 @@
 - Python Mac 下载：https://www.python.org/downloads/macos/
 - llama.cpp 固定发行：https://github.com/ggml-org/llama.cpp/releases/tag/b6500
 - Qwen 官方模型：https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
-
-本次新增演示层在辅助执行环境 Linux x86_64 实测，Mac/Windows 路径通过平台分支提供，仍须在候选人设备完成安装和真实运行。下载和版本探测成功也不等于三个画像已经推理成功。
