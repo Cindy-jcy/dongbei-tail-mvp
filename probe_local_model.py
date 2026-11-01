@@ -1,4 +1,3 @@
-"""Reproduce weak-prompt probes with the real local model; not a send path."""
 import json
 import os
 from pathlib import Path
