@@ -16,6 +16,7 @@
 <section id="checks" class="panel"><div class="block"><h2>⑦ 验证与下一步</h2><table><tr><th>验证层级</th><th>已有证据与边界</th></tr><tr><td>36 项核心单元测试</td><td>检查指定边界与异常；已有报告在 outputs/test_report.txt，新增演示层另测。</td></tr><tr><td>3 个真实模型画像</td><td>已有本地 Qwen 原始响应；新运行以③本次时间与结果为准。</td></tr><tr><td>405 人离线覆盖</td><td>固定决策回放，不是 405 次模型调用。</td></tr></table><h3>业务效果需后续实验验证</h3><p>先授权、风险与频控检查，再在分层内随机分组。主指标：24 小时内有效阅读客户数 ÷ 全部合格入组客户数。生成失败仍保留原分组。</p><p>严重违规或风险错配暂停批次；观察投诉、退订和审核耗时。当前没有线上效果提升结论。</p><h3>上线前补齐</h3><p>正式内容审批、风险测评有效期、触达授权、退订、频控、内容页链接，再做小流量评估。</p></div></section>
 </main>
 <script>
+  
 const $=id=>document.getElementById(id), fmt=x=>JSON.stringify(x,null,2);
 const tabs=[['overview','① 数据与分层'],['flow','② 客户与流程'],['run','③ 运行与结果'],['examples','④ 三个样例'],['badcases','⑤ 失败与修复'],['source','⑥ 对照源码'],['checks','⑦ 验证与上线']];
 let token='',busy=false;
